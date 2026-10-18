@@ -180,8 +180,8 @@ const Division = () => {
                 <div className="space-y-4">
                   <div className={`p-4 rounded-lg border-2 text-center ${
                     gameState.isCorrect 
-                      ? 'border-green-500 bg-green-50 text-green-700' 
-                      : 'border-red-500 bg-red-50 text-red-700'
+                      ? 'border-green-400/40 bg-green-500/10 text-green-200' 
+                      : 'border-red-400/40 bg-red-500/10 text-red-200'
                   }`}>
                     <div className="flex items-center justify-center gap-2 mb-2">
                       {gameState.isCorrect ? (
