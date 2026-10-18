@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,106 +10,101 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 15% 97%;
-    --foreground: 240 10% 15%;
+    /* Palette Banque d’applis : fond nuit, surfaces sombres et accents violets */
+    --background: 228 40% 9%;
+    --foreground: 230 30% 97%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 15%;
+    --card: 228 35% 14%;
+    --card-foreground: 230 30% 97%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 15%;
+    --popover: 228 35% 14%;
+    --popover-foreground: 230 30% 97%;
 
-    --primary: 217 91% 60%;
+    --primary: 252 88% 70%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 76% 36%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 231 34% 22%;
+    --secondary-foreground: 230 30% 97%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 230 31% 19%;
+    --muted-foreground: 225 18% 72%;
 
-    --accent: 38 92% 50%;
+    --accent: 260 70% 64%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 72% 58%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 228 24% 27%;
+    --input: 228 24% 27%;
+    --ring: 252 88% 70%;
 
-    /* Custom educational colors */
-    --math-addition: 142 76% 36%;
-    --math-subtraction: 217 91% 60%;
-    --math-multiplication: 271 81% 56%;
-    --math-division: 38 92% 50%;
-    --math-mixed: 333 71% 51%;
-    --math-exam: 220 13% 18%;
+    /* Couleurs pédagogiques distinctes pour les opérations */
+    --math-addition: 154 58% 43%;
+    --math-subtraction: 220 72% 63%;
+    --math-multiplication: 271 72% 66%;
+    --math-division: 38 86% 57%;
+    --math-mixed: 333 68% 62%;
+    --math-exam: 225 18% 22%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
-    --gradient-addition: linear-gradient(135deg, hsl(142 76% 36%), hsl(154 64% 45%));
-    --gradient-subtraction: linear-gradient(135deg, hsl(217 91% 60%), hsl(210 85% 68%));
-    --gradient-multiplication: linear-gradient(135deg, hsl(271 81% 56%), hsl(280 87% 65%));
-    --gradient-division: linear-gradient(135deg, hsl(38 92% 50%), hsl(45 93% 58%));
-    --gradient-mixed: linear-gradient(135deg, hsl(333 71% 51%), hsl(340 75% 60%));
-    --gradient-exam: linear-gradient(135deg, hsl(220 13% 18%), hsl(210 11% 25%));
+    /* Dégradé violet de la marque, et dégradés profonds pour les opérations */
+    --gradient-primary: linear-gradient(135deg, hsl(252 88% 66%), hsl(272 76% 57%));
+    --gradient-addition: linear-gradient(135deg, hsl(154 58% 27%), hsl(164 58% 36%));
+    --gradient-subtraction: linear-gradient(135deg, hsl(222 62% 36%), hsl(215 64% 46%));
+    --gradient-multiplication: linear-gradient(135deg, hsl(271 62% 36%), hsl(280 72% 46%));
+    --gradient-division: linear-gradient(135deg, hsl(35 72% 32%), hsl(42 83% 41%));
+    --gradient-mixed: linear-gradient(135deg, hsl(329 54% 34%), hsl(340 62% 43%));
+    --gradient-exam: linear-gradient(135deg, hsl(226 25% 16%), hsl(226 27% 25%));
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 228 37% 12%;
+    --sidebar-foreground: 230 30% 97%;
+    --sidebar-primary: 252 88% 70%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 231 34% 22%;
+    --sidebar-accent-foreground: 230 30% 97%;
+    --sidebar-border: 228 24% 27%;
+    --sidebar-ring: 252 88% 70%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 228 40% 9%;
+    --foreground: 230 30% 97%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 228 35% 14%;
+    --card-foreground: 230 30% 97%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 228 35% 14%;
+    --popover-foreground: 230 30% 97%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 252 88% 70%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 231 34% 22%;
+    --secondary-foreground: 230 30% 97%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 230 31% 19%;
+    --muted-foreground: 225 18% 72%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 260 70% 64%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 58%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 228 24% 27%;
+    --input: 228 24% 27%;
+    --ring: 252 88% 70%;
+
+    --sidebar-background: 228 37% 12%;
+    --sidebar-foreground: 230 30% 97%;
+    --sidebar-primary: 252 88% 70%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 231 34% 22%;
+    --sidebar-accent-foreground: 230 30% 97%;
+    --sidebar-border: 228 24% 27%;
+    --sidebar-ring: 252 88% 70%;
   }
 }
 
@@ -120,5 +115,8 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-image: radial-gradient(ellipse at 50% -20%, rgba(110, 86, 235, 0.18), transparent 48%);
+    background-attachment: fixed;
   }
 }
