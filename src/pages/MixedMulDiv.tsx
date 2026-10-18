@@ -185,14 +185,14 @@ const MixedMulDiv = () => {
                   </div>
                 ) : (
                   <div className="space-y-6">
-                    <div className={`p-6 rounded-lg ${gameState.isCorrect ? 'bg-green-50 dark:bg-green-900/20' : 'bg-red-50 dark:bg-red-900/20'}`}>
+                    <div className={`p-6 rounded-lg ${gameState.isCorrect ? 'border border-green-400/30 bg-green-500/10' : 'border border-red-400/30 bg-red-500/10'}`}>
                       <div className="flex items-center justify-center gap-3 mb-4">
                         {gameState.isCorrect ? (
-                          <CheckCircle className="h-8 w-8 text-green-600 dark:text-green-400" />
+                          <CheckCircle className="h-8 w-8 text-green-300" />
                         ) : (
-                          <XCircle className="h-8 w-8 text-red-600 dark:text-red-400" />
+                          <XCircle className="h-8 w-8 text-red-300" />
                         )}
-                        <span className={`text-xl font-semibold ${gameState.isCorrect ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
+                        <span className={`text-xl font-semibold ${gameState.isCorrect ? 'text-green-300' : 'text-red-300'}`}>
                           {gameState.isCorrect ? 'Correct !' : 'Incorrect'}
                         </span>
                       </div>
@@ -200,7 +200,7 @@ const MixedMulDiv = () => {
                       <div className="text-lg">
                         <p>Ta réponse : <span className="font-dyslexic font-bold">{gameState.userAnswer?.replace('.', ',')}</span></p>
                         {!gameState.isCorrect && (
-                          <p>Bonne réponse : <span className="font-dyslexic font-bold text-green-600 dark:text-green-400">{gameState.currentQuestion?.answer.toString().replace('.', ',')}</span></p>
+                          <p>Bonne réponse : <span className="font-dyslexic font-bold text-green-300">{gameState.currentQuestion?.answer.toString().replace('.', ',')}</span></p>
                         )}
                       </div>
                     </div>
